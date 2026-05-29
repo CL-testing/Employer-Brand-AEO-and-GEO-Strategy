@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IntouchCX — Employer Brand & AEO/GEO Strategy 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest:   #001705;
+  --lime:     #4CE467;
+  --gold:     #FFC844;
+  --cream:    #F3F1E5;
+  --white:    #FFFFFF;
+  --black:    #000000;
+  --violet:   #766DFA;
+  --navy:     #160644;
+  --coral:    #FC805F;
+  --red:      #F5333F;
+  --emerald:  #169968;
+  --moss:     #2B5243;
+  --body-text:#1a2a1a;
+  --muted:    #4a5e4a;
+  --border:   rgba(0,23,5,0.12);
+  --border-md:rgba(0,23,5,0.22);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--body-text);font-size:14px;line-height:1.75;}
+h1,h2,h3,h4,h5{font-family:'Piazzolla',serif;}
+p{margin-bottom:12px;}
+p:last-child{margin-bottom:0;}
+ul{padding-left:18px;margin-bottom:12px;}
+li{margin-bottom:5px;font-size:13.5px;line-height:1.65;}
+strong{font-weight:600;}
+a{color:inherit;text-decoration:none;}
+
+/* COVER */
+.cover{
+  background:var(--forest);
+  min-height:100vh;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  padding:56px 64px;
+  position:relative;
+  overflow:hidden;
+}
+.cover-ring{
+  position:absolute;
+  border-radius:50%;
+  border:1px solid rgba(76,228,103,0.12);
+  pointer-events:none;
+}
+.cover-ring.r1{width:700px;height:700px;top:-200px;right:-200px;}
+.cover-ring.r2{width:420px;height:420px;bottom:-140px;left:-100px;}
+.cover-ring.r3{width:200px;height:200px;bottom:120px;right:80px;border-color:rgba(255,200,68,0.15);}
+.cover-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Poppins',sans-serif;font-size:11px;font-weight:500;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--lime);
+}
+.cover-eyebrow span{display:inline-block;width:24px;height:1px;background:var(--lime);}
+.cover-headline{
+  font-family:'Piazzolla',serif;
+  font-size:clamp(48px,7vw,82px);
+  font-weight:900;
+  line-height:1.0;
+  color:var(--white);
+  margin-top:36px;
+}
+.cover-headline em{color:var(--lime);font-style:normal;}
+.cover-sub{
+  font-family:'Poppins',sans-serif;font-weight:300;font-size:15px;
+  color:rgba(243,241,229,0.6);max-width:480px;margin-top:18px;line-height:1.7;
+}
+.cover-meta-row{
+  display:flex;gap:48px;padding-top:36px;
+  border-top:1px solid rgba(243,241,229,0.1);
+}
+.cover-meta-block{display:flex;flex-direction:column;gap:4px;}
+.cover-meta-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(243,241,229,0.35);}
+.cover-meta-val{font-size:13px;color:rgba(243,241,229,0.75);font-weight:300;}
+
+/* LAYOUT */
+.wrap{max-width:980px;margin:0 auto;padding:72px 48px;}
+.wrap + .wrap{border-top:1px solid var(--border);}
+.section-tab{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--moss);margin-bottom:14px;
+}
+.section-tab .dot{width:6px;height:6px;border-radius:50%;background:var(--lime);}
+.section-title{
+  font-family:'Piazzolla',serif;font-size:clamp(28px,4vw,40px);font-weight:700;
+  line-height:1.1;color:var(--forest);margin-bottom:10px;
+}
+.section-lead{
+  font-size:15px;font-weight:300;color:var(--muted);
+  max-width:620px;margin-bottom:48px;line-height:1.75;
+}
+h3{font-size:17px;font-weight:600;color:var(--forest);margin:36px 0 12px;}
+h4{font-size:14px;font-weight:600;color:var(--forest);margin:20px 0 8px;}
+.rule{border:none;border-top:1px solid var(--border);margin:40px 0;}
+
+/* TOC */
+.toc-entry{
+  display:flex;align-items:baseline;justify-content:space-between;
+  padding:13px 0;border-bottom:1px solid var(--border);
+}
+.toc-left{display:flex;align-items:baseline;gap:16px;}
+.toc-num{font-size:11px;font-weight:600;color:var(--lime);letter-spacing:0.1em;font-family:'Poppins';}
+.toc-title{font-size:14px;color:var(--body-text);}
+.toc-tag{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+
+/* CALLOUTS */
+.callout{border-radius:3px;padding:24px 28px;margin:24px 0;}
+.callout p{font-size:14px;line-height:1.7;}
+.callout-dark{background:var(--forest);color:var(--cream);}
+.callout-dark p{color:rgba(243,241,229,0.85);}
+.callout-dark strong{color:var(--lime);}
+.callout-gold{background:#fffbee;border-left:4px solid var(--gold);}
+.callout-green{background:#edf8f1;border-left:4px solid var(--emerald);}
+.callout-red{background:#fff0ee;border-left:4px solid var(--red);}
+.callout-violet{background:#f2f1ff;border-left:4px solid var(--violet);}
+
+/* STAT GRID */
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px;margin:24px 0;}
+.stat-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:3px;padding:18px 18px 16px;
+}
+.stat-val{font-family:'Piazzolla',serif;font-size:34px;font-weight:900;line-height:1;}
+.stat-desc{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.45;}
+.stat-src{font-size:10px;font-weight:500;letter-spacing:0.06em;margin-top:8px;font-family:'Poppins';}
+.c-lime{color:var(--emerald);}
+.c-red{color:var(--red);}
+.c-gold{color:#b08000;}
+.c-blue{color:var(--navy);}
+.c-violet{color:var(--violet);}
+
+/* SCORE BARS */
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.bar-label{font-size:12.5px;color:var(--muted);min-width:230px;line-height:1.3;}
+.bar-track{flex:1;height:5px;background:rgba(0,23,5,0.08);border-radius:3px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:3px;}
+.bf-red{background:var(--red);}
+.bf-gold{background:var(--gold);}
+.bf-green{background:var(--emerald);}
+.bf-lime{background:var(--lime);}
+.bf-violet{background:var(--violet);}
+.bar-score{font-size:12px;font-weight:600;font-family:'Poppins';min-width:30px;text-align:right;}
+
+/* COMPETITOR TABLE */
+.ctable{width:100%;border-collapse:collapse;margin:24px 0;font-size:13px;}
+.ctable th{
+  font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--muted);border-bottom:1px solid var(--border-md);
+  padding:10px 12px;text-align:left;
+}
+.ctable td{padding:12px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+.ctable tr.subject td{background:var(--white);}
+.ctable tr.subject td:first-child{border-left:3px solid var(--lime);}
+.cpill{font-family:'Piazzolla',serif;font-size:18px;font-weight:900;}
+.tag{
+  display:inline-block;font-size:10px;font-weight:600;
+  padding:2px 8px;border-radius:2px;letter-spacing:0.06em;text-transform:uppercase;
+  font-family:'Poppins';
+}
+.tag-green{background:#edf8f1;color:var(--moss);}
+.tag-red{background:#fff0ee;color:var(--red);}
+.tag-gold{background:#fffbee;color:#7a5500;}
+.tag-violet{background:#f2f1ff;color:var(--violet);}
+
+/* ACTION CARDS */
+.action-stack{display:flex;flex-direction:column;gap:14px;margin:20px 0;}
+.action-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:3px;padding:20px 22px;
+  display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
+}
+.action-n{
+  font-family:'Piazzolla',serif;font-size:24px;font-weight:900;
+  color:var(--lime);line-height:1;padding-top:2px;
+}
+.action-title{font-size:14px;font-weight:600;margin-bottom:6px;color:var(--forest);}
+.action-body{font-size:13px;color:var(--muted);line-height:1.65;}
+.action-meta{
+  font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;
+  color:rgba(0,23,5,0.35);margin-top:9px;
+}
+
+/* TWO COL */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:20px 0;}
+.col-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:3px;padding:20px 22px;
+}
+.col-card-title{font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+
+/* TIMELINE */
+.timeline{margin:24px 0;}
+.tl-row{display:grid;grid-template-columns:90px 1fr;gap:20px;margin-bottom:0;}
+.tl-phase{
+  font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--muted);border-right:2px solid var(--border);
+  padding:16px 16px 0 0;text-align:right;line-height:1.4;
+}
+.tl-body{padding:12px 0 32px;}
+.tl-body h4{font-family:'Piazzolla',serif;font-size:16px;font-weight:700;margin-bottom:10px;color:var(--forest);}
+.tl-body ul{padding-left:16px;}
+.tl-body li{font-size:13px;margin-bottom:5px;color:var(--muted);}
+
+/* KPI MATRIX */
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;}
+.kpi-cell{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:3px;padding:16px 18px;
+}
+.kpi-head{font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+.kpi-item{font-size:12.5px;color:var(--muted);padding:5px 0;border-bottom:1px solid var(--border);}
+.kpi-item:last-child{border-bottom:none;}
+
+/* REVIEW / LEGAL BOXES */
+.legal-box{
+  background:var(--white);border:1px solid var(--border-md);
+  border-top:4px solid var(--gold);border-radius:0 0 3px 3px;
+  padding:20px 24px;margin:16px 0;
+}
+.legal-box-title{font-size:13px;font-weight:600;margin-bottom:10px;color:var(--forest);}
+.legal-box ul{padding-left:18px;}
+.legal-box li{font-size:13px;margin-bottom:6px;color:var(--muted);}
+.deny-box{border-top-color:var(--red);}
+
+/* PROCESS FLOW */
+.process-flow{display:flex;flex-direction:column;gap:0;margin:20px 0;}
+.process-step{
+  display:grid;grid-template-columns:36px 1fr;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--border);align-items:start;
+}
+.process-step:last-child{border-bottom:none;}
+.process-icon{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--forest);color:var(--lime);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Piazzolla',serif;font-weight:900;font-size:15px;
+  flex-shrink:0;
+}
+.process-title{font-size:13.5px;font-weight:600;margin-bottom:4px;color:var(--forest);}
+.process-body{font-size:12.5px;color:var(--muted);line-height:1.6;}
+
+/* AEO PROMPT TABLE */
+.prompt-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:12.5px;}
+.prompt-table th{
+  font-size:10px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;
+  color:var(--muted);border-bottom:1px solid var(--border-md);
+  padding:9px 11px;text-align:left;
+}
+.prompt-table td{padding:10px 11px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--muted);}
+.prompt-table tr:nth-child(even) td{background:rgba(0,23,5,0.02);}
+.engine-tag{
+  display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;
+  border-radius:2px;letter-spacing:0.05em;font-family:'Poppins';
+}
+.et-chatgpt{background:#e8f5e9;color:#1b5e20;}
+.et-gemini{background:#e3f2fd;color:#0d47a1;}
+.et-perplexity{background:#f3e5f5;color:#4a148c;}
+.et-copilot{background:#fff3e0;color:#e65100;}
+.et-all{background:#fafafa;color:#333;border:1px solid #ddd;}
+
+/* PLATFORM GRID */
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0;}
+.platform-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:3px;padding:16px 18px;
+}
+.platform-name{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:4px;}
+.platform-reach{font-size:11px;color:var(--muted);margin-bottom:8px;}
+.platform-aeo{font-size:10px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;}
+.platform-notes{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5;}
+
+/* FOOTER */
+.doc-footer{
+  background:var(--forest);padding:36px 64px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;
+}
+.doc-footer span{color:rgba(243,241,229,0.4);}
+.doc-footer strong{color:var(--lime);}
+
+@media print{
+  .cover{min-height:auto;page-break-after:always;}
+  .wrap{padding:40px;}
+  .action-card,.stat-card,.kpi-cell,.platform-card{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-ring r1"></div>
+  <div class="cover-ring r2"></div>
+  <div class="cover-ring r3"></div>
+  <div>
+    <div class="cover-eyebrow"><span></span>Confidential · Internal Strategy Document</div>
+  </div>
+  <div>
+    <div class="cover-headline">Employer Brand<br><em>AEO/GEO</em><br>Strategy</div>
+    <div class="cover-sub">A complete assessment of IntouchCX brand reputation, employee experience, competitive positioning, review platform governance, crisis moderation, and a phased action plan for AI search era employer brand authority.</div>
+  </div>
+  <div class="cover-meta-row">
+    <div class="cover-meta-block">
+      <span class="cover-meta-label">Company</span>
+      <span class="cover-meta-val">IntouchCX</span>
+    </div>
+    <div class="cover-meta-block">
+      <span class="cover-meta-label">Date</span>
+      <span class="cover-meta-val">May 2026</span>
+    </div>
+    <div class="cover-meta-block">
+      <span class="cover-meta-label">Focus</span>
+      <span class="cover-meta-val">Recruitment, Culture, AEO/GEO</span>
+    </div>
+    <div class="cover-meta-block">
+      <span class="cover-meta-label">Classification</span>
+      <span class="cover-meta-val">Internal Use Only</span>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="wrap">
+  <div class="section-tab"><div class="dot"></div>Contents</div>
+  <div class="section-title">What's inside</div>
+  <div style="margin-top:8px;">
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">01</span><span class="toc-title">Research & Data — The Current State</span></div><span class="toc-tag">Research</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">02</span><span class="toc-title">Competitive Landscape — Benchmark Analysis</span></div><span class="toc-tag">Benchmarks</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">03</span><span class="toc-title">AEO/GEO Audit Framework — Engine-by-Engine Assessment</span></div><span class="toc-tag">AEO/GEO</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">04</span><span class="toc-title">Review Platform Strategy — All Relevant Platforms</span></div><span class="toc-tag">Governance</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">05</span><span class="toc-title">Review Takedown Strategy</span></div><span class="toc-tag">Governance</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">06</span><span class="toc-title">Action Plan 1 — Internal Culture & Integrity</span></div><span class="toc-tag">Strategy</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">07</span><span class="toc-title">Action Plan 2 — AEO/GEO Content Architecture</span></div><span class="toc-tag">Strategy</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">08</span><span class="toc-title">Action Plan 3 — Brand Ambassador Program</span></div><span class="toc-tag">Strategy</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">09</span><span class="toc-title">EX-to-Marketing Content Production Process</span></div><span class="toc-tag">Operations</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">10</span><span class="toc-title">Crisis Moderation Protocol</span></div><span class="toc-tag">Operations</span></div>
+    <div class="toc-entry"><div class="toc-left"><span class="toc-num">11</span><span class="toc-title">Implementation Roadmap & KPIs</span></div><span class="toc-tag">Execution</span></div>
+  </div>
+</div>
+
+<!-- SECTION 01: RESEARCH -->
+<div class="wrap" id="s01">
+  <div class="section-tab"><div class="dot"></div>01 — Research & Data</div>
+  <div class="section-title">The current state of IntouchCX employer brand</div>
+  <p class="section-lead">This section synthesizes all available third-party data, platform sentiment, and AI visibility signals to establish an honest baseline. Strategy built on anything less is strategy built on sand.</p>
+
+  <h3>The AEO/GEO landscape in 2026</h3>
+  <p>The digital discovery environment has fundamentally shifted. Traditional SEO focused on ranking pages for human-clicked search results. AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) focus on earning citations inside synthesized answers generated by ChatGPT, Gemini, Google AI Mode, and Perplexity — where a growing majority of professional research, including candidate research, now begins.</p>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-val c-red">97%</div><div class="stat-desc">of digital leaders report positive AEO/GEO impact</div><div class="stat-src c-red">Conductor Research 2025</div></div>
+    <div class="stat-card"><div class="stat-val c-blue">12%</div><div class="stat-desc">of digital marketing budgets now allocated to AI visibility</div><div class="stat-src c-blue">Enterprise average</div></div>
+    <div class="stat-card"><div class="stat-val c-lime">11%</div><div class="stat-desc">of all AI search responses now cite LinkedIn content directly</div><div class="stat-src c-lime">SEMrush, 325K prompts</div></div>
+    <div class="stat-card"><div class="stat-val c-gold">60%</div><div class="stat-desc">of searches end without a click — AI answers the question directly</div><div class="stat-src c-gold">SparkToro/Similarweb</div></div>
+  </div>
+
+  <div class="callout callout-dark">
+    <p><strong>The strategic implication:</strong> When a candidate asks "What is it like to work at IntouchCX?" — that answer is being assembled in real time from Glassdoor, Reddit, LinkedIn articles, press releases, and award citations. The brand does not currently control that answer. This strategy is about changing that.</p>
+  </div>
+
+  <hr class="rule">
+  <h3>Where IntouchCX genuinely excels</h3>
+  <div class="callout callout-green">
+    <p>IntouchCX achieved Everest Group Leader status in the CXM Americas PEAK Matrix 2025 — advancing in just three years. Client NPS of 39 ranks first among all major BPO competitors. IntouchAI was named a Major Contender in the Everest Group Conversational AI PEAK Matrix. Diversity score of 86/100 on Comparably ranks second in the peer group. The executive team rates in the top 5% of all companies with 10,000 or more employees.</p>
+  </div>
+
+  <h3>Where the gaps are real</h3>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-val c-red">3.1<span style="font-size:17px;">/5</span></div><div class="stat-desc">Overall Glassdoor rating from 1,100+ reviews</div><div class="stat-src c-red">Below 3.7 industry avg</div></div>
+    <div class="stat-card"><div class="stat-val c-red">45%</div><div class="stat-desc">Employees who would recommend to a friend</div><div class="stat-src c-red">Industry avg: ~60%</div></div>
+    <div class="stat-card"><div class="stat-val c-red">2.7<span style="font-size:17px;">/5</span></div><div class="stat-desc">Compensation rating — declined 9% year-over-year</div><div class="stat-src c-red">Critical signal</div></div>
+    <div class="stat-card"><div class="stat-val c-gold">34</div><div class="stat-desc">Employee NPS — ranks 4th of 5 in the peer group</div><div class="stat-src c-gold">Comparably</div></div>
+    <div class="stat-card"><div class="stat-val c-red">2.8<span style="font-size:17px;">/5</span></div><div class="stat-desc">Work-life balance rating on Glassdoor</div><div class="stat-src c-red">Recurring theme</div></div>
+    <div class="stat-card"><div class="stat-val c-red">2.9<span style="font-size:17px;">/5</span></div><div class="stat-desc">Career growth perception across regions</div><div class="stat-src c-red">High-risk signal</div></div>
+  </div>
+
+  <div class="two-col" style="margin-top:28px;">
+    <div class="col-card">
+      <div class="col-card-title" style="color:var(--emerald);">Positive signals</div>
+      <ul>
+        <li>Supportive frontline managers in several locations</li>
+        <li>Human, non-scripted interaction culture at agent level</li>
+        <li>Training programs cited positively in initial onboarding</li>
+        <li>Work-from-home flexibility praised across regions</li>
+        <li>Strong team camaraderie at agent level</li>
+        <li>On-time payroll and structured campuses noted (India, Asia Pacific)</li>
+        <li>12 Asia-Pacific Stevie Awards won in 2025</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title" style="color:var(--red);">Risk signals</div>
+      <ul>
+        <li>2025 described as "the company's weakest year" in multiple reviews</li>
+        <li>Favoritism and inconsistent management accountability</li>
+        <li>HR department quality flagged across multiple regions</li>
+        <li>Career advancement feels stagnant for frontline staff</li>
+        <li>Compensation below expectations relative to role complexity</li>
+        <li>Training inconsistency — coached on things not taught</li>
+        <li>Gap between aspirational brand language and lived experience</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 02: COMPETITORS -->
+<div class="wrap" id="s02">
+  <div class="section-tab"><div class="dot"></div>02 — Competitive Landscape</div>
+  <div class="section-title">Benchmark analysis across the BPO peer group</div>
+  <p class="section-lead">An assessment of where IntouchCX sits relative to direct competitors across client reputation, employer brand, culture scores, and AI search visibility.</p>
+
+  <table class="ctable">
+    <thead>
+      <tr>
+        <th>Company</th><th>Score</th><th>Glassdoor</th><th>CEO Rating</th><th>eNPS</th><th>Employer Brand</th><th>AEO/GEO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Teleperformance</strong></td><td><span class="cpill c-lime">82</span></td><td>3.8★</td><td>92/100</td><td>Top tier</td><td><span class="tag tag-green">Strong</span></td><td><span class="tag tag-green">Advanced</span></td></tr>
+      <tr><td><strong>TaskUs</strong></td><td><span class="cpill c-lime">79</span></td><td>4.0★</td><td>91/100</td><td>62</td><td><span class="tag tag-green">People-first</span></td><td><span class="tag tag-gold">Growing</span></td></tr>
+      <tr><td><strong>Concentrix</strong></td><td><span class="cpill c-lime">71</span></td><td>3.7★</td><td>91/100</td><td>Above avg</td><td><span class="tag tag-green">Brand #363</span></td><td><span class="tag tag-green">Invested</span></td></tr>
+      <tr><td><strong>Foundever</strong></td><td><span class="cpill c-gold">66</span></td><td>3.5★</td><td>Mid</td><td>Average</td><td><span class="tag tag-gold">Human-centric</span></td><td><span class="tag tag-gold">Moderate</span></td></tr>
+      <tr class="subject"><td><strong>IntouchCX ◀</strong></td><td><span class="cpill c-gold">61</span></td><td>3.1★</td><td>79/100</td><td>34</td><td><span class="tag tag-red">Gaps present</span></td><td><span class="tag tag-red">Underdeveloped</span></td></tr>
+      <tr><td><strong>TELUS International</strong></td><td><span class="cpill c-gold">60</span></td><td>3.4★</td><td>76/100</td><td>Average</td><td><span class="tag tag-gold">DEI focus</span></td><td><span class="tag tag-gold">Moderate</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Where IntouchCX leads the peer group</h3>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-val c-lime">#1</div><div class="stat-desc">Client NPS among all named BPO competitors</div><div class="stat-src c-lime">Comparably</div></div>
+    <div class="stat-card"><div class="stat-val c-lime">#1</div><div class="stat-desc">Product quality score — rated by enterprise clients</div><div class="stat-src c-lime">Service delivery</div></div>
+    <div class="stat-card"><div class="stat-val c-lime">#2</div><div class="stat-desc">Diversity score at 86/100 — only TP ranks higher</div><div class="stat-src c-lime">DEI strength</div></div>
+    <div class="stat-card"><div class="stat-val c-lime">Top 5%</div><div class="stat-desc">Executive team rating for companies with 10,000+ employees</div><div class="stat-src c-lime">Leadership asset</div></div>
+  </div>
+
+  <div class="callout callout-dark">
+    <p>IntouchCX has the <strong>client reputation to be a market leader</strong> and the <strong>employee reputation of a company still establishing its internal culture</strong>. These two realities cannot coexist long-term without one damaging the other. The path forward is not reputation management — it is closing the gap between the external brand promise and the internal experience. The foundations exist. The work is making the inside of the organisation worthy of the outside of the brand.</p>
+  </div>
+</div>
+
+<!-- SECTION 03: AEO/GEO AUDIT FRAMEWORK -->
+<div class="wrap" id="s03">
+  <div class="section-tab"><div class="dot"></div>03 — AEO/GEO Audit Framework</div>
+  <div class="section-title">Engine-by-engine assessment methodology</div>
+  <p class="section-lead">Beyond global statistics, the AEO/GEO audit must be tangible and repeatable — a structured set of prompts tested across each major AI engine to generate measurable, comparable scores over time.</p>
+
+  <h3>How the audit works</h3>
+  <p>Each of the prompt categories below is run in each AI engine. Responses are scored on four dimensions: accuracy (is the information correct?), sentiment (is the tone positive, neutral, or negative?), depth (does the engine provide substantive detail or a generic answer?), and source quality (which platforms and citations is the engine drawing from?). Results are documented, scored out of 10, and compared across engines and time periods to track improvement.</p>
+
+  <div class="callout callout-violet">
+    <p><strong>Cadence:</strong> This audit should be conducted at baseline (before strategy execution), at 90 days, at 6 months, and every 6 months thereafter. Assign one person to run and document each audit cycle. Results feed directly into content prioritization for the AEO content architecture in Section 07.</p>
+  </div>
+
+  <h3>Prompt bank — run in ChatGPT, Gemini, Perplexity, and Microsoft Copilot</h3>
+  <table class="prompt-table">
+    <thead>
+      <tr><th style="width:40%;">Prompt to test</th><th style="width:20%;">Engine(s)</th><th style="width:40%;">What to assess</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>"What is it like to work at IntouchCX?"</td><td><span class="engine-tag et-all">All engines</span></td><td>Overall sentiment, sources cited, accuracy of claims about culture</td></tr>
+      <tr><td>"Is IntouchCX a good company to work for?"</td><td><span class="engine-tag et-all">All engines</span></td><td>Sentiment score, whether Glassdoor/Indeed data dominates the response</td></tr>
+      <tr><td>"What are IntouchCX employee reviews like?"</td><td><span class="engine-tag et-chatgpt">ChatGPT</span> <span class="engine-tag et-gemini">Gemini</span></td><td>Which review platforms are cited, positive vs negative weighting</td></tr>
+      <tr><td>"What career growth opportunities does IntouchCX offer?"</td><td><span class="engine-tag et-all">All engines</span></td><td>Whether structured career content exists to be cited, or engine defaults to review data</td></tr>
+      <tr><td>"What benefits does IntouchCX provide to employees?"</td><td><span class="engine-tag et-all">All engines</span></td><td>Accuracy, whether own careers page content is cited</td></tr>
+      <tr><td>"How does the hiring process work at IntouchCX?"</td><td><span class="engine-tag et-perplexity">Perplexity</span> <span class="engine-tag et-copilot">Copilot</span></td><td>AEO structure quality — is IntouchCX's own content answering this?</td></tr>
+      <tr><td>"IntouchCX culture and values"</td><td><span class="engine-tag et-all">All engines</span></td><td>Whether brand mission language appears, or only third-party sentiment</td></tr>
+      <tr><td>"Should I work at IntouchCX or Concentrix?"</td><td><span class="engine-tag et-chatgpt">ChatGPT</span> <span class="engine-tag et-gemini">Gemini</span></td><td>Competitive positioning in AI synthesis — which company is framed more positively</td></tr>
+      <tr><td>"Should I work at IntouchCX or TaskUs?"</td><td><span class="engine-tag et-all">All engines</span></td><td>Same — cultural differentiation test against the people-first benchmark</td></tr>
+      <tr><td>"IntouchCX leadership and management"</td><td><span class="engine-tag et-all">All engines</span></td><td>Whether Everest Group recognition and executive team content appears</td></tr>
+      <tr><td>"IntouchCX Winnipeg jobs" (or specific city)</td><td><span class="engine-tag et-copilot">Copilot</span> <span class="engine-tag et-perplexity">Perplexity</span></td><td>Localized employer presence — whether location-specific content is indexed</td></tr>
+      <tr><td>"IntouchCX diversity and inclusion"</td><td><span class="engine-tag et-all">All engines</span></td><td>Whether the 86/100 Comparably diversity score or DEI programs are surfaced</td></tr>
+      <tr><td>"IntouchCX AI and technology"</td><td><span class="engine-tag et-all">All engines</span></td><td>Whether Everest Group, Stevie Awards, IntouchAI content is being cited</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Scoring rubric per prompt</h3>
+  <div class="two-col">
+    <div class="col-card">
+      <div class="col-card-title">Score each response 1–10</div>
+      <ul>
+        <li><strong>9–10:</strong> Accurate, positive, cites IntouchCX-owned content</li>
+        <li><strong>7–8:</strong> Accurate, neutral, mix of owned and third-party sources</li>
+        <li><strong>5–6:</strong> Mostly accurate, draws primarily from review platforms</li>
+        <li><strong>3–4:</strong> Mixed sentiment, limited accuracy, weak source quality</li>
+        <li><strong>1–2:</strong> Negative, inaccurate, or IntouchCX is invisible in the response</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Track across each engine separately</div>
+      <ul>
+        <li>Document the exact AI-generated response verbatim</li>
+        <li>Log which sources the engine cites (Glassdoor, LinkedIn, news, careers page)</li>
+        <li>Note whether IntouchCX content or competitor content is cited more</li>
+        <li>Assign sentiment: Positive / Neutral / Mixed / Negative</li>
+        <li>Average all prompt scores per engine for an overall engine score</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Current AEO/GEO infrastructure scores (baseline)</h3>
+  <div class="bar-row"><span class="bar-label">AEO-structured employer content (careers page)</span><div class="bar-track"><div class="bar-fill bf-red" style="width:28%"></div></div><span class="bar-score c-red">28</span></div>
+  <div class="bar-row"><span class="bar-label">GEO third-party citation coverage</span><div class="bar-track"><div class="bar-fill bf-gold" style="width:50%"></div></div><span class="bar-score c-gold">50</span></div>
+  <div class="bar-row"><span class="bar-label">LinkedIn employer content authority</span><div class="bar-track"><div class="bar-fill bf-gold" style="width:45%"></div></div><span class="bar-score c-gold">45</span></div>
+  <div class="bar-row"><span class="bar-label">FAQ/schema markup for hiring queries</span><div class="bar-track"><div class="bar-fill bf-red" style="width:15%"></div></div><span class="bar-score c-red">15</span></div>
+  <div class="bar-row"><span class="bar-label">Employee voice on open-access platforms</span><div class="bar-track"><div class="bar-fill bf-red" style="width:30%"></div></div><span class="bar-score c-red">30</span></div>
+  <div class="bar-row"><span class="bar-label">Press/media citations on employer topics</span><div class="bar-track"><div class="bar-fill bf-gold" style="width:55%"></div></div><span class="bar-score c-gold">55</span></div>
+  <div class="bar-row"><span class="bar-label">AI-answer quality (tested across all engines)</span><div class="bar-track"><div class="bar-fill bf-gold" style="width:40%"></div></div><span class="bar-score c-gold">40</span></div>
+</div>
+
+<!-- SECTION 04: REVIEW PLATFORMS -->
+<div class="wrap" id="s04">
+  <div class="section-tab"><div class="dot"></div>04 — Review Platform Strategy</div>
+  <div class="section-title">All relevant review platforms globally</div>
+  <p class="section-lead">Glassdoor is not the only platform that feeds AI engines and candidate perception. Below is a complete map of all employer review platforms with AEO/GEO relevance and strategic priority.</p>
+
+  <div class="platform-grid">
+    <div class="platform-card">
+      <div class="platform-name">Glassdoor</div>
+      <div class="platform-reach">Global, 60M+ monthly users</div>
+      <div class="platform-aeo c-red">AEO/GEO: Primary signal</div>
+      <div class="platform-notes">The most heavily cited employer review platform in AI engine responses globally. Both ChatGPT and Perplexity draw directly from Glassdoor content when answering employer sentiment questions. The single highest-priority platform for reputation management.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Indeed</div>
+      <div class="platform-reach">Global, 350M+ monthly visits</div>
+      <div class="platform-aeo c-red">AEO/GEO: Strong signal</div>
+      <div class="platform-notes">Second most cited employer review source in AI responses. Particularly dominant in North American and European candidate research. IntouchCX has 874 reviews here. Active response management and milestone-triggered review invitations apply here equally to Glassdoor.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">LinkedIn</div>
+      <div class="platform-reach">Global, 1B+ members</div>
+      <div class="platform-aeo c-lime">AEO/GEO: #2 most cited domain in AI responses globally</div>
+      <div class="platform-notes">The highest-leverage platform for proactive employer brand content. LinkedIn articles and posts are cited in 11% of all AI responses — more than Wikipedia. The ambassador program and leadership content live here primarily.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Comparably</div>
+      <div class="platform-reach">US-focused, B2B / tech skew</div>
+      <div class="platform-aeo c-gold">AEO/GEO: Moderate</div>
+      <div class="platform-notes">IntouchCX already has strong scores here in some categories (diversity 86, perks 76). The gap is that the company profile has not been claimed and filled out completely — leaving no EVP content for AI engines to cite. Claim and complete the profile immediately.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Kununu</div>
+      <div class="platform-reach">DACH region (Germany, Austria, Switzerland)</div>
+      <div class="platform-aeo c-gold">AEO/GEO: Regional</div>
+      <div class="platform-notes">Dominant employer review platform in German-speaking markets. Relevant for IntouchCX European operations. Review monitoring and response apply here as in Glassdoor/Indeed.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Jobstreet / JobsDB</div>
+      <div class="platform-reach">Southeast Asia, India</div>
+      <div class="platform-aeo c-gold">AEO/GEO: Regional</div>
+      <div class="platform-notes">Key platform for IntouchCX's Asia Pacific and India operations. Employee reviews here feed AI engines when users research IntouchCX in those markets. Active profile management recommended for Hyderabad and other APAC sites.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Naukri / AmbitionBox</div>
+      <div class="platform-reach">India, 70M+ users</div>
+      <div class="platform-aeo c-gold">AEO/GEO: Regional (India)</div>
+      <div class="platform-notes">Critical for IntouchCX's India hiring pipeline (Hyderabad operations). AmbitionBox in particular is growing in AI citation frequency for India-based employer queries. Profile claims and active response management needed.</div>
+    </div>
+    <div class="platform-card">
+      <div class="platform-name">Reddit</div>
+      <div class="platform-reach">Global, #1 most cited domain in AI responses</div>
+      <div class="platform-aeo c-red">AEO/GEO: Cannot be controlled, must be monitored</div>
+      <div class="platform-notes">Reddit is the single most cited domain in AI engine responses globally. Subreddits like r/jobs, r/cscareerquestions, and r/AskHR regularly feature company-specific threads. IntouchCX cannot post here officially, but must monitor and track sentiment — it is feeding AI engine answers directly.</div>
+    </div>
+  </div>
+
+  <h3>Ethical review generation — what is permissible</h3>
+  <div class="legal-box">
+    <div class="legal-box-title">Permitted under Glassdoor, Indeed, FTC guidelines, and Canadian employment law</div>
+    <ul>
+      <li>Sending a neutral, voluntary invitation to all employees at 90-day, 1-year, and promotion milestones — using language such as "We invite you to share your honest experience at IntouchCX" with no implication of tone</li>
+      <li>Using Glassdoor's official Employer Center review request tool to send milestone invitations at scale</li>
+      <li>Asking broadly across all employee levels — not selectively targeting employees known to be satisfied</li>
+      <li>Responding professionally and specifically to every review, positive or negative</li>
+      <li>Flagging reviews that violate platform guidelines through official reporting tools</li>
+      <li>Recognising the internal culture improvements that generate authentic positive reviews</li>
+    </ul>
+  </div>
+
+  <div class="legal-box deny-box">
+    <div class="legal-box-title" style="color:var(--red);">Not permitted — legal, reputational, and platform risk</div>
+    <ul>
+      <li>Asking employees specifically for positive reviews — violates FTC updated rules (2024) and platform terms</li>
+      <li>Incentivising reviews with gifts, bonuses, or recognition tied to posting — illegal under FTC consumer review rules that now extend to employer review platforms</li>
+      <li>Coordinating a campaign that generates a sudden spike in reviews — algorithmically flagged; Glassdoor places public "Inflated Reviews" alerts on the employer profile</li>
+      <li>Managers personally requesting reviews from direct reports — creates a coercive power dynamic even if unintentional</li>
+      <li>Using company-provided or company-accessed devices for review submission — IP tracking applies</li>
+    </ul>
+  </div>
+
+  <p>The realistic 18-month target, assuming internal fixes in Section 06 are genuinely executed, is <strong>3.5–3.7 stars on Glassdoor</strong>. TaskUs maintains 4.0 and Teleperformance 3.8 consistently — both achievable in this industry through authentic improvement, not manipulation.</p>
+</div>
+
+<!-- SECTION 05: TAKEDOWN STRATEGY -->
+<div class="wrap" id="s05">
+  <div class="section-tab"><div class="dot"></div>05 — Review Takedown Strategy</div>
+  <div class="section-title">Removing reviews that violate platform rules</div>
+  <p class="section-lead">Both Glassdoor and Indeed have official dispute and removal mechanisms. Reviews cannot be removed simply because they are negative — they must violate specific platform guidelines. The process below can be executed entirely within the internal team.</p>
+
+  <div class="callout callout-gold">
+    <p><strong>Important framing:</strong> The takedown strategy is a defensive tool, not a reputation-building one. It removes clearly false or abusive content. It does not replace the internal improvement work that generates genuine positive sentiment. Both must run in parallel.</p>
+  </div>
+
+  <h3>Grounds for removal — what qualifies</h3>
+  <div class="two-col">
+    <div class="col-card">
+      <div class="col-card-title">Glassdoor removable content</div>
+      <ul>
+        <li>Demonstrably false factual statements (e.g., incorrect company name, wrong location, events that did not occur)</li>
+        <li>Reviewer was never employed at IntouchCX (verifiable via employment records)</li>
+        <li>Hate speech, targeted harassment, or personal identifying information</li>
+        <li>Content posted by a competitor or third party with no employment history</li>
+        <li>Reviews that appear coordinated (identical language patterns, same posting window, no account history)</li>
+        <li>Defamatory statements that can be demonstrated to be false</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Indeed removable content</div>
+      <ul>
+        <li>False factual claims (verifiable inaccuracies)</li>
+        <li>Hate speech, discrimination, or threatening content</li>
+        <li>Reviewer with no employment relationship to the company</li>
+        <li>Content violating Indeed's Community Guidelines</li>
+        <li>Spam or fraudulent reviews</li>
+        <li>Reviews containing confidential company information</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Step-by-step takedown process — team-executable</h3>
+  <div class="process-flow">
+    <div class="process-step">
+      <div class="process-icon">1</div>
+      <div><div class="process-title">Document and triage</div><div class="process-body">Screenshot and log every review that appears to violate platform guidelines. Note the review date, text, star rating, and the specific guideline violation. Maintain a shared tracker (spreadsheet) with columns: Platform, Date, Review excerpt, Violation type, Status, Date flagged, Outcome. Do this before taking any action.</div></div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">2</div>
+      <div><div class="process-title">Cross-reference employment records</div><div class="process-body">For reviews claiming events that appear implausible or that reference roles, locations, or dates that do not match company records — check internal HR records. If the person cannot be identified as a current or former employee, that is the primary basis for a removal request. Note: do not attempt to identify anonymous reviewers — only verify whether the described employment situation is plausible.</div></div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">3</div>
+      <div><div class="process-title">Flag through official platform tools</div><div class="process-body">On Glassdoor: log into the Employer Center, navigate to the review, select "Flag Review," choose the violation category, and provide a factual explanation (not an emotional argument). On Indeed: log into the Employer Dashboard, locate the review, select "Report," specify the violation. Do not flag reviews simply for being negative — flags that appear retaliatory are themselves a policy violation and can result in account penalties.</div></div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">4</div>
+      <div><div class="process-title">Submit a formal dispute with evidence</div><div class="process-body">If the initial flag is rejected and the review remains, both Glassdoor and Indeed have a secondary dispute process accessible through the Employer Center or support portal. This is where documentation matters — submit the specific false claim, the evidence disproving it, and the relevant Community Guidelines clause. Be factual, professional, and specific. Vague disputes are routinely rejected.</div></div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">5</div>
+      <div><div class="process-title">Legal escalation for defamation (last resort)</div><div class="process-body">For reviews that contain demonstrably false and harmful factual claims that the platform refuses to remove, consult with legal counsel on a defamation claim. This is a last resort — the FTC's review suppression rule (Section 465.7) prohibits using unfounded legal threats to remove reviews. Any legal action must be grounded in a genuine, documented defamation case. The cost-benefit rarely favors this path unless the content is causing material recruiting harm.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 06: ACTION PLAN 1 -->
+<div class="wrap" id="s06">
+  <div class="section-tab"><div class="dot"></div>06 — Action Plan 1</div>
+  <div class="section-title">Internal culture and integrity</div>
+  <p class="section-lead">No AEO strategy, brand campaign, or ambassador program can outrun a 3.1-star rating. The foundation must be genuine. Every action in this section must be true before it is communicated externally.</p>
+
+  <div class="action-stack">
+    <div class="action-card">
+      <div class="action-n">01</div>
+      <div>
+        <div class="action-title">Compensation transparency audit</div>
+        <div class="action-body">Compensation is rated 2.7/5 and declined 9% in a single year — the loudest signal in the data. A cross-regional compensation review anchored to market benchmarks is the highest-ROI internal investment available. Even modest, transparent adjustments communicated clearly will shift employee sentiment more than any branding campaign. The communication of intent matters as much as the adjustment itself.</div>
+        <div class="action-meta">Owner: HR + Finance · Timeline: 90 days · Priority: Critical</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">02</div>
+      <div>
+        <div class="action-title">Career ladder clarity — visible and accessible</div>
+        <div class="action-body">Career growth perception at 2.9/5 is a recurring complaint across all regions. Internal career pathways need to be built and published for every function — not just in onboarding decks but in a living, accessible format. Publishing internal mobility statistics (for example, the percentage of team leads promoted from agent roles in the past year) also becomes direct GEO content when placed on the careers page.</div>
+        <div class="action-meta">Owner: HR + L&D · Timeline: 60 days · Priority: High</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">03</div>
+      <div>
+        <div class="action-title">Management accountability framework</div>
+        <div class="action-body">Favoritism and inconsistent management are the two most cited culture issues across platforms. Introducing 360-degree feedback at the manager level, with accountability tied to team engagement scores rather than performance metrics alone, addresses the root cause. Anonymous pulse surveys at the frontline level (quarterly) give HR early warning signals before they surface publicly on review platforms.</div>
+        <div class="action-meta">Owner: HR + Operations · Timeline: 120 days · Priority: High</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">04</div>
+      <div>
+        <div class="action-title">HR department quality and responsiveness upgrade</div>
+        <div class="action-body">Multiple reviews across regions specifically cite the HR department as a point of failure. This is a reputational liability that sits upstream of every other fix. HR must function as a genuine advocate for employee experience, not only an administrative compliance function. An employer brand specialist embedded within HR — whose role is internal listening, response, and culture reporting — directly addresses this gap.</div>
+        <div class="action-meta">Owner: CHRO · Timeline: 60 days · Priority: Critical</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">05</div>
+      <div>
+        <div class="action-title">Training consistency audit across sites</div>
+        <div class="action-body">The specific complaint "coached on things not taught in training" indicates a material gap between training content and operational expectations. Standardizing training-to-floor transitions across sites and creating a feedback loop for new agents to flag gaps within their first 30 days — without fear of retaliation — addresses a root cause of early-tenure dissatisfaction and negative reviews.</div>
+        <div class="action-meta">Owner: Training + Operations · Timeline: 90 days · Priority: Medium-High</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">06</div>
+      <div>
+        <div class="action-title">Internal wins communication engine</div>
+        <div class="action-body">IntouchCX won 12 honors at the 2025 Asia-Pacific Stevie Awards, achieved Everest Group Leader status, and expanded operations to Athens. Most frontline employees are likely unaware of these achievements. A monthly internal communication — simple, visual, and mobile-accessible — that celebrates company wins and connects them to how every team member contributed builds the internal pride that precedes authentic external advocacy.</div>
+        <div class="action-meta">Owner: Internal Comms + Marketing · Timeline: 30 days · Priority: Quick win</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 07: ACTION PLAN 2 — AEO/GEO -->
+<div class="wrap" id="s07">
+  <div class="section-tab"><div class="dot"></div>07 — Action Plan 2</div>
+  <div class="section-title">AEO/GEO content architecture</div>
+  <p class="section-lead">Once internal foundations are being addressed, the second phase is constructing the digital content infrastructure that allows AI engines to accurately and favourably represent IntouchCX when candidates are researching employment decisions.</p>
+
+  <h3>How AEO and GEO operate</h3>
+  <div class="two-col">
+    <div class="col-card">
+      <div class="col-card-title" style="color:var(--navy);">AEO — on-site owned content</div>
+      <p style="font-size:13px;">Structuring owned content so AI can extract direct, accurate answers. Works on the careers page, culture page, team pages, and job descriptions.</p>
+      <ul>
+        <li>Question-based H2/H3 headings</li>
+        <li>40–80 word concise answer paragraphs</li>
+        <li>FAQ schema markup (JSON-LD)</li>
+        <li>HowTo schema for the application process</li>
+        <li>Specific, verifiable data points rather than aspirational claims</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title" style="color:var(--moss);">GEO — third-party citation ecosystem</div>
+      <p style="font-size:13px;">Building the external reference environment that AI engines draw from when synthesizing answers about IntouchCX as an employer.</p>
+      <ul>
+        <li>LinkedIn long-form articles by leadership and ambassadors</li>
+        <li>Press and media coverage on culture and people topics</li>
+        <li>Award citations that mention employee experience specifically</li>
+        <li>Substantive, specific review responses on Glassdoor/Indeed</li>
+        <li>Comparably profile completion with data-backed EVP content</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Careers page transformation — highest-priority AEO fix</h3>
+  <p>The current careers page is narrative and aspirational. It needs to be rebuilt as a structured answer engine — providing specific, schema-marked responses to the exact questions candidates ask AI tools. The EX-to-Marketing content production process in Section 09 governs how this content gets created.</p>
+
+  <div class="action-stack">
+    <div class="action-card">
+      <div class="action-n">A</div>
+      <div>
+        <div class="action-title">Question-mapped content blocks</div>
+        <div class="action-body">Each of the following must have a dedicated, clearly labelled section with a concrete 60–80 word answer: "What does career growth look like at IntouchCX?" / "What is the culture like at IntouchCX?" / "How does IntouchCX support employee wellbeing?" / "What benefits does IntouchCX provide?" / "How does the hiring process work?" / "Where does IntouchCX operate?" These mirror exactly the prompts run in the AEO audit, so content improvements are directly measurable in subsequent audit cycles.</div>
+        <div class="action-meta">Owner: Marketing + HR · Format: Structured HTML with FAQ schema</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">B</div>
+      <div>
+        <div class="action-title">Replace aspirational language with specific data</div>
+        <div class="action-body">"We believe in growth" must become "In 2025, X% of our team lead roles were filled through internal promotions." "We care about wellbeing" must become specific program names, benefit details, and participation rates. Every claim requires substantiation. Vague claims are invisible to AI engines and distrusted by candidates. Specific numbers are cited and believed. The EX team owns the data; Marketing converts it to AEO-structured content.</div>
+        <div class="action-meta">Owner: Marketing + HR Data · Format: Fact-checked content update</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">C</div>
+      <div>
+        <div class="action-title">JSON-LD FAQ schema implementation</div>
+        <div class="action-body">Every question-and-answer block on the careers and culture pages must be wrapped in FAQ schema markup. This signals to Google AI Overviews, Bing Copilot, and other AI search engines that this content is authoritative and structured for direct extraction. Implementation takes 30–60 minutes per page once content is written and is a web development task with disproportionate AEO impact.</div>
+        <div class="action-meta">Owner: Web Dev + Marketing · Timeline: After content writing is complete</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">D</div>
+      <div>
+        <div class="action-title">Employee stories — first-person, specific, named</div>
+        <div class="action-body">Publishing 4–6 employee story profiles on the careers page, each containing the employee's name, role, tenure, a specific challenge they faced, and a concrete example of growth or support received. These serve dual purposes — humanising for candidates and providing specific, named, attributable content that AI engines weight as high-trust citation material. Stories sourced through the EX team, written by Marketing.</div>
+        <div class="action-meta">Owner: Marketing + EX · Format: Long-form profiles (600–900 words each)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-green">
+    <p><strong>GEO update on LinkedIn:</strong> LinkedIn is now the second most cited domain across all major AI search platforms (ChatGPT, Google AI Mode, Perplexity), cited in 11% of all AI responses. Between December 2025 and February 2026, LinkedIn's citation frequency on ChatGPT more than doubled. Long-form LinkedIn articles (500–2,000 words) and short substantive posts (50–300 words) are the formats most likely to be cited by AI engines. LinkedIn is the highest-leverage platform for both the ambassador program and leadership thought leadership — and it directly feeds AEO/GEO visibility in a way that Instagram, Facebook, and X do not.</p>
+  </div>
+
+  <div class="action-stack" style="margin-top:0;">
+    <div class="action-card">
+      <div class="action-n">E</div>
+      <div>
+        <div class="action-title">Leadership LinkedIn content cadence</div>
+        <div class="action-body">The co-CEOs and COO should each publish 2–3 LinkedIn articles per month on employer brand topics: "How IntouchCX builds career pathways for frontline agents," "What the Athens expansion taught us about scaling culture," "Our approach to AI and human collaboration in CX." These articles must be specific, honest, and human in voice — not press release language. Marketing supports with ghostwriting, EX provides the data and story angles.</div>
+        <div class="action-meta">Owner: Marketing (ghostwriting) + C-Suite · Monthly cadence</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">F</div>
+      <div>
+        <div class="action-title">Company LinkedIn page overhaul and cadence</div>
+        <div class="action-body">The company page must be restructured with keyword-specific sections AI engines use for professional queries: "working at IntouchCX," "IntouchCX culture," "IntouchCX careers." Post a minimum of 4 times per week with this content mix: 40% culture and people stories, 30% industry thought leadership, 20% company milestones and awards, 10% open roles. Consistency of publication matters as much as content quality for AI citation frequency.</div>
+        <div class="action-meta">Owner: Marketing · Ongoing · LinkedIn-native format</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 08: ACTION PLAN 3 — AMBASSADOR -->
+<div class="wrap" id="s08">
+  <div class="section-tab"><div class="dot"></div>08 — Action Plan 3</div>
+  <div class="section-title">Brand ambassador program</div>
+  <p class="section-lead">Employee voices are twice as trusted as corporate messaging and now directly feed AI search visibility through LinkedIn. The ambassador program is one of the highest-leverage investments available — structured correctly, it generates both human brand awareness and measurable AEO/GEO impact.</p>
+
+  <div class="callout callout-violet">
+    <p><strong>Platform clarity for the team:</strong> Standard social media platforms — Instagram, Facebook, X/Twitter, TikTok — do not feed AI engine responses because those platforms restrict AI content crawling. LinkedIn is the verified exception. Cited in 11% of all AI responses globally, LinkedIn is the channel that moves AEO/GEO visibility. The ambassador program is therefore LinkedIn-first for AI impact, while other platforms serve brand awareness and human reach — both of which have value, but serve different KPIs.</p>
+  </div>
+
+  <div class="action-stack">
+    <div class="action-card">
+      <div class="action-n">01</div>
+      <div>
+        <div class="action-title">Ambassador selection criteria</div>
+        <div class="action-body">Ambassadors must be employees who genuinely value their experience at IntouchCX — not employees who feel coerced or incentivised. The authenticity of their voice is what makes the program credible to both AI engines and human candidates. Select across levels (frontline agents, team leads, specialists, corporate staff) and regions. Target 15–25 ambassadors in the first cohort. Participation is entirely voluntary.</div>
+        <div class="action-meta">Owner: Designated team member + HR · Launch: 60 days</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">02</div>
+      <div>
+        <div class="action-title">LinkedIn content training and support</div>
+        <div class="action-body">Many employees want to share their experience but need guidance on writing compellingly on LinkedIn. A half-day workshop covering: how to write a LinkedIn post about a work experience, what content formats AI engines cite (long-form articles 500–2,000 words; short posts 50–300 words), and how to tell a professional story authentically. Optional content prompts and Marketing ghostwriting support available — but the voice must always belong to the employee.</div>
+        <div class="action-meta">Owner: Marketing + external LinkedIn trainer · One-time workshop + ongoing support</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">03</div>
+      <div>
+        <div class="action-title">Content focus — specific, professional, AI-readable</div>
+        <div class="action-body">Guide ambassadors toward LinkedIn content that AI engines weight most highly: specific career progression stories ("How I moved from agent to quality analyst at IntouchCX"), genuine reflections on culture ("What surprised me about the Athens office"), skill development experiences. These are the posts that get cited when someone asks an AI engine "what is it like to work at IntouchCX?" — which is the metric that ultimately matters for recruitment pipeline.</div>
+        <div class="action-meta">Format: LinkedIn Articles (500–2,000 words) and short posts (50–300 words)</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">04</div>
+      <div>
+        <div class="action-title">Recognition without financial incentivisation</div>
+        <div class="action-body">Ambassadors are recognised internally — featured in the internal newsletter, celebrated in team communications, acknowledged by leadership. Financial incentives, gift cards, or bonuses tied to posting constitute incentivised reviews under FTC rules that now extend to employment platforms, and both LinkedIn and Glassdoor flag incentivised patterns algorithmically. Recognition is powerful and legally clean. Financial incentives create legal exposure.</div>
+        <div class="action-meta">Important: Internal recognition only — no financial rewards tied to content creation</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n">05</div>
+      <div>
+        <div class="action-title">Platform channel split</div>
+        <div class="action-body"><strong>LinkedIn:</strong> Long-form career stories, culture insights, leadership thought leadership — primary AEO/GEO channel. <strong>Instagram/TikTok:</strong> Day-in-the-life content, team moments, event coverage — brand awareness and human connection. <strong>Facebook:</strong> Local community and regional recruitment in specific markets. <strong>X:</strong> Industry commentary and real-time company news — secondary channel. Each serves a purpose. LinkedIn is the only one that directly feeds AI search visibility.</div>
+        <div class="action-meta">LinkedIn = AEO/GEO impact. All other platforms = brand awareness and human reach.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 09: EX-TO-MARKETING PROCESS -->
+<div class="wrap" id="s09">
+  <div class="section-tab"><div class="dot"></div>09 — Content Production Process</div>
+  <div class="section-title">EX-to-Marketing content workflow</div>
+  <p class="section-lead">The EX team determines what stories and data are worth telling. Marketing shapes them for AEO/GEO requirements and brings them to life. Here is the solidified process that governs how content moves from insight to publication.</p>
+
+  <div class="process-flow">
+    <div class="process-step">
+      <div class="process-icon">1</div>
+      <div>
+        <div class="process-title">EX team: Identify and surface content opportunities</div>
+        <div class="process-body">The EX team owns sourcing — identifying compelling employee stories, surfacing key internal data points (internal promotion rates, tenure averages, program participation), flagging cultural milestones and people moments worth amplifying, and selecting employee story candidates for the careers page profiles. Output: a content brief submitted to Marketing. Brief includes the core story, relevant data, the employee's name and consent status, and the audience/purpose.</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">2</div>
+      <div>
+        <div class="process-title">Marketing: AEO/GEO mapping and format decision</div>
+        <div class="process-body">Marketing receives the brief and maps it against the AEO audit prompt bank (Section 03). Which candidate question does this content answer? Which AI engine gap does it address? Marketing determines the format: careers page content block (with FAQ schema), LinkedIn long-form article, short LinkedIn post, or leadership thought leadership piece. Format decision is driven by AEO/GEO priority, not production preference.</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">3</div>
+      <div>
+        <div class="process-title">Marketing: Draft and refine</div>
+        <div class="process-body">Marketing writes the content to AEO/GEO specifications: question-based structure, specific data points, 40–80 word answer paragraphs for careers page blocks, 500–2,000 words for LinkedIn articles. Aspirational language is replaced with verifiable claims. The IntouchCX brand voice is applied consistently — specific, human, and honest. For employee stories, the draft is returned to the employee for voice review and approval before publication.</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">4</div>
+      <div>
+        <div class="process-title">EX + Legal: Accuracy and consent review</div>
+        <div class="process-body">EX reviews all data claims for accuracy. Legal or HR confirms consent for any named employee profiles. Any claims about compensation, benefits, or company programs are verified against current policy before publication. This step exists to protect both employees and the brand — inaccurate employer content that is later contradicted by employee experience creates a credibility problem that is worse than not publishing at all.</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">5</div>
+      <div>
+        <div class="process-title">Marketing: Publication — website + LinkedIn</div>
+        <div class="process-body">Careers page content is published by the web team with JSON-LD FAQ schema markup applied. LinkedIn articles are published under the relevant leadership or ambassador profile. Company page posts are scheduled to maintain the 4x/week cadence. All published URLs are logged in the content tracker for inclusion in the next AEO audit cycle — so that improvements in AI citation frequency can be traced to specific content pieces.</div>
+      </div>
+    </div>
+    <div class="process-step">
+      <div class="process-icon">6</div>
+      <div>
+        <div class="process-title">Monthly review: AEO audit loop</div>
+        <div class="process-body">At the end of each month, Marketing runs a subset of the AEO audit prompts (Section 03) to check whether recently published content is being cited in AI engine responses. Results are documented and fed back to EX as guidance for the next content cycle — identifying which question gaps still need to be addressed. This closes the loop between content production and measurable AEO/GEO outcomes.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-gold">
+    <p><strong>Cadence target:</strong> A minimum of 2 pieces of AEO-structured content per month from this pipeline — one careers page update or employee story, one LinkedIn article. At the 6-month mark, increase to 4 pieces per month across both channels. Quality and accuracy always take priority over volume.</p>
+  </div>
+</div>
+
+<!-- SECTION 10: CRISIS MODERATION -->
+<div class="wrap" id="s10">
+  <div class="section-tab"><div class="dot"></div>10 — Crisis Moderation Protocol</div>
+  <div class="section-title">Daily platform monitoring and crisis response</div>
+  <p class="section-lead">IntouchCX is increasing its moderation investment in response to recent cases that raised flags and generated negative sentiment. The daily 30-minute monitoring protocol below formalizes this effort into a structured, repeatable process with clear escalation paths.</p>
+
+  <h3>Daily monitoring scope (30 minutes minimum)</h3>
+  <div class="two-col">
+    <div class="col-card">
+      <div class="col-card-title">Public platforms to check daily</div>
+      <ul>
+        <li>Glassdoor — new reviews, employer response queue</li>
+        <li>Indeed — new reviews, employer response queue</li>
+        <li>LinkedIn — company page mentions, comments, DMs</li>
+        <li>X/Twitter — brand mentions (@IntouchCX, 24-7Intouch)</li>
+        <li>Google Business Profile — reviews and Q&A sections</li>
+        <li>Reddit — search: "IntouchCX" in r/jobs, r/cscareerquestions, relevant industry subs</li>
+        <li>Comparably — new reviews and ratings</li>
+      </ul>
+    </div>
+    <div class="col-card">
+      <div class="col-card-title">Private and semi-private channels to check daily</div>
+      <ul>
+        <li>Facebook Groups — search "IntouchCX" in relevant employee and job-seeker groups</li>
+        <li>Blind (app) — search IntouchCX company mentions</li>
+        <li>Fishbowl by Glassdoor — industry community discussions</li>
+        <li>WhatsApp/Telegram public groups where relevant by region</li>
+        <li>Regional Facebook groups for IntouchCX operating markets (Philippines, India, LATAM, Egypt)</li>
+        <li>Google Alerts — set for "IntouchCX" and "24-7 Intouch" — delivers results to inbox daily</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Crisis escalation tiers</h3>
+  <div class="action-stack">
+    <div class="action-card">
+      <div class="action-n" style="color:var(--emerald);">T1</div>
+      <div>
+        <div class="action-title">Standard negative sentiment — handle within 24 hours</div>
+        <div class="action-body">A single negative review, a frustrated comment, or an individual complaint on a public platform. Response is handled by the designated moderator using approved response templates. No escalation required. Document in the tracker. If it is a Glassdoor/Indeed review, respond professionally in the Employer Center within 5 business days. Acknowledge the concern, explain what is being done, invite direct contact. The audience for every response is future candidates, not the reviewer.</div>
+        <div class="action-meta">Handler: Employer Brand Moderator · Response time: Within 24–48 hours</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n" style="color:var(--gold);">T2</div>
+      <div>
+        <div class="action-title">Elevated concern — escalate to Marketing Manager within 4 hours</div>
+        <div class="action-body">Multiple posts about the same incident appearing across platforms, a viral post gaining traction (over 50 shares or comments), a credible media inquiry, a coordinated negative campaign in a Facebook group, or a review containing legally sensitive allegations. Do not respond to these without manager approval. Document the full context — screenshots, timestamps, platform, engagement numbers — and present to the Marketing Manager for response strategy.</div>
+        <div class="action-meta">Handler: Escalate to Marketing Manager · Response time: Within 4 hours of detection</div>
+      </div>
+    </div>
+    <div class="action-card">
+      <div class="action-n" style="color:var(--red);">T3</div>
+      <div>
+        <div class="action-title">Full crisis — HR, Legal, and Executive team involved immediately</div>
+        <div class="action-body">Content going viral with material reputational harm, a media story being published, allegations of serious misconduct or legal violations appearing publicly, or an organised employee action gaining external coverage. Activate the full crisis response protocol immediately — pause all outbound marketing and employer brand content, convene HR, Legal, and the relevant executive, and issue no public response until the internal facts are known. Speed of internal clarity matters more than speed of public response.</div>
+        <div class="action-meta">Handler: HR + Legal + Executive · Response: No public statement until internal alignment</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Daily monitoring log</h3>
+  <p>Every monitoring session must be documented in a shared log (shared spreadsheet or project management tool) with: date, platforms checked, any new mentions or reviews found, sentiment classification (positive / neutral / negative / crisis), action taken, and follow-up required. This log becomes the evidence base for monthly sentiment reporting and quarterly AEO audit inputs.</p>
+</div>
+
+<!-- SECTION 11: ROADMAP -->
+<div class="wrap" id="s11">
+  <div class="section-tab"><div class="dot"></div>11 — Implementation Roadmap</div>
+  <div class="section-title">Phased execution and KPIs</div>
+  <p class="section-lead">Three phases across 18 months. The sequence is non-negotiable — internal integrity before external amplification. Publishing what has not yet been built damages credibility rather than building it.</p>
+
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="tl-phase" style="color:var(--red);border-color:var(--red);">Phase 1<br>Days 1–90</div>
+      <div class="tl-body">
+        <h4>Foundation — fix what's broken inside</h4>
+        <ul>
+          <li>Compensation transparency review initiated</li>
+          <li>HR department quality and accountability audit launched</li>
+          <li>Internal wins communication live (monthly)</li>
+          <li>Career ladder documentation created and published internally</li>
+          <li>Management 360 feedback programme designed</li>
+          <li>Glassdoor and Indeed review response protocol live (5-day SLA)</li>
+          <li>Milestone review invitation system implemented</li>
+          <li>Careers page AEO gap audit completed</li>
+          <li>AEO audit baseline run across all four engines (Section 03)</li>
+          <li>Daily moderation log started (30 min daily)</li>
+          <li>Review takedown triage tracker created</li>
+          <li>Google Alerts set for all brand name variations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-phase" style="color:var(--navy);border-color:var(--navy);">Phase 2<br>Days 90–180</div>
+      <div class="tl-body">
+        <h4>Build — construct the AEO/GEO infrastructure</h4>
+        <ul>
+          <li>Careers page rebuilt with question-mapped, schema-marked content</li>
+          <li>Employee story profiles published (6 minimum, multi-region)</li>
+          <li>Leadership LinkedIn article programme live (bi-weekly)</li>
+          <li>Company LinkedIn page content calendar active (4x/week)</li>
+          <li>Brand ambassador cohort (15–25) selected and trained</li>
+          <li>Ambassador LinkedIn content support system live</li>
+          <li>EX-to-Marketing content production workflow active</li>
+          <li>First frontline pulse survey deployed</li>
+          <li>Comparably profile claimed and fully completed</li>
+          <li>90-day AEO audit run — compare against baseline</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-phase" style="color:var(--emerald);border-color:var(--emerald);">Phase 3<br>Days 180–540</div>
+      <div class="tl-body">
+        <h4>Amplify — scale what works, measure, and refine</h4>
+        <ul>
+          <li>Glassdoor target: 3.5 stars (organic, through genuine improvement)</li>
+          <li>Ambassador programme expanded to 40–60 active voices</li>
+          <li>Quarterly AEO audit reports tracking citation frequency by engine</li>
+          <li>Media and PR strategy targeting employer brand coverage</li>
+          <li>Annual workplace recognition award submissions</li>
+          <li>EVP formally documented and published on careers page</li>
+          <li>Annual employer brand audit against competitive benchmarks</li>
+          <li>Regional platform strategies (Kununu, AmbitionBox, Jobstreet) active</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+  <h3>Key performance indicators</h3>
+  <div class="kpi-grid">
+    <div class="kpi-cell">
+      <div class="kpi-head">Internal health</div>
+      <div class="kpi-item">Glassdoor: target 3.5 stars by Month 12</div>
+      <div class="kpi-item">eNPS: target 45+ by Month 12 (from 34)</div>
+      <div class="kpi-item">Recommend rate: target 55% (from 45%)</div>
+      <div class="kpi-item">Compensation rating: target 3.2+ (from 2.7)</div>
+      <div class="kpi-item">Pulse survey participation: 60% or above</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-head">AEO/GEO visibility</div>
+      <div class="kpi-item">AEO audit average score per engine (baseline set in Phase 1)</div>
+      <div class="kpi-item">LinkedIn article citations in AI responses (tracked monthly)</div>
+      <div class="kpi-item">Careers page FAQ schema impressions (Google Search Console)</div>
+      <div class="kpi-item">LinkedIn company page follower growth</div>
+      <div class="kpi-item">Ambassador post reach on LinkedIn (monthly total)</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-head">Talent acquisition</div>
+      <div class="kpi-item">Time-to-fill reduction for key roles</div>
+      <div class="kpi-item">Offer acceptance rate improvement</div>
+      <div class="kpi-item">Source attribution — % from LinkedIn/organic</div>
+      <div class="kpi-item">90-day new hire retention rate</div>
+      <div class="kpi-item">Candidate quality score (hiring manager rated)</div>
+    </div>
+    <div class="kpi-cell">
+      <div class="kpi-head">Brand perception</div>
+      <div class="kpi-item">Comparably overall culture score improvement</div>
+      <div class="kpi-item">CEO approval rating trajectory</div>
+      <div class="kpi-item">Global brand rank on Comparably (target: top 600)</div>
+      <div class="kpi-item">Industry award applications submitted annually</div>
+      <div class="kpi-item">Media mentions on employer brand topics</div>
+    </div>
+  </div>
+
+  <div class="callout callout-dark" style="margin-top:36px;">
+    <p>The most important principle to carry into execution: <strong>this strategy only works if the internal experience improves first.</strong> No amount of AEO content, LinkedIn publishing, or review management substitutes for a genuinely better employee experience. IntouchCX already has the client NPS, the AI technology recognition, the diversity scores, and the executive capability to be a great employer story. The work is making the inside of the organisation worthy of the outside of the brand.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="doc-footer">
+  <span>IntouchCX Employer Brand &amp; AEO/GEO Strategy · <strong>Confidential</strong> · May 2026</span>
+  <span>Internal Use Only · Marketing Team</span>
+</div>
+
+</body>
+</html>
